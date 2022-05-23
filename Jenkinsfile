@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Clone Backend repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/mariuszlempicki/Backend.git'
+                checkout scm
             }
         }
         
